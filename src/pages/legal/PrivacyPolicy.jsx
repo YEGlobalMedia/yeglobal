@@ -55,16 +55,16 @@ export default function PrivacyPolicy() {
             </p>
             <p>
               This policy covers Personal Information that we collect directly
-              from you. It&apos;s when you get in touch with us, use our website at
+              from you. It&apos;s when you get in touch with us, use our website at{' '}
               <a
                 href="https://www.yeglobalmediacorp.com.au"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#ff6a00] hover:underline"
               >
-                www.yeglobalmediacorp.com.au
+                 www.yeglobalmediacorp.com.au
               </a>
-              (Website), or sign up to our newsletter.
+              {' '}(Website), or sign up to our newsletter.
               Sometimes we might need to make changes or add stuff to this policy
               and we&apos;ll let you know where possible.
             </p>
@@ -190,8 +190,14 @@ export default function PrivacyPolicy() {
             <p>
               You have the right to access and correct your Personal Information
               under the Privacy Act. If you want to access or correct your info,
-              just reach out to our team at hello@yeglobalmediacorp.com.au They will help
-              you out.
+              just reach out to our team at{' '}
+              <a
+                href="mailto:hello@yeglobalmediacorp.com.au"
+                className="text-[#ff6a00] hover:underline"
+              >
+                hello@yeglobalmediacorp.com.au
+              </a>
+              {'. '}They will help you out.
             </p>
             <p>
               To ensure your privacy and protect others&apos; info, you&apos;ll need to
