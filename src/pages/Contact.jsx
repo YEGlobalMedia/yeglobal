@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Instagram, Twitter } from "lucide-react";
+import { Instagram, Twitter, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import Button from "../components/ui/Button";
 
@@ -60,7 +60,7 @@ export default function Contact() {
         {/* Hero & Heading */}
         <section className="w-full max-w-4xl px-6 pt-20 pb-12 md:pt-32 md:pb-20 text-center">
           <h1 className="font-['Playfair Display',serif] text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-6 text-[#1A1A1A]">
-            Connect with YE Global
+            Connect with <span className="whitespace-nowrap">YE Global</span>
           </h1>
           <p className="font-serif italic text-xl md:text-2xl lg:text-3xl text-[#6b6b6b] font-light">
             Shaping the future of global narratives.
@@ -191,6 +191,11 @@ export default function Contact() {
                 ]}
                 email="hello@yeglobalmediacorp.com.au"
                 socials={[
+                  {
+                    href: "https://www.linkedin.com/company/ye-global-media-corp/",
+                    label: "LinkedIn",
+                    Icon: Linkedin,
+                  },
                   {
                     href: "https://x.com/YE_Globalmedia",
                     label: "X (Twitter)",

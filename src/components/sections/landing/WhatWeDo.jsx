@@ -184,31 +184,31 @@ export default function WhatWeDo() {
   return (
     <section className="relative w-full bg-white z-20 -mt-[40vh] sm:-mt-[48vh] lg:-mt-[55vh] pt-6 pb-20 sm:pb-24 lg:pt-10 lg:pb-32">
       <div className="max-w-[1500px] mx-auto px-6 lg:px-12">
-        {/* HEADER */}
-        <div className="grid lg:grid-cols-12 gap-14 items-start">
-          <motion.div className="lg:col-span-5">
+        {/* HEADER - centered with content below */}
+        <div className="grid lg:grid-cols-12 gap-14 items-start text-center">
+          <motion.div className="lg:col-span-12 flex justify-center">
             <motion.p
               ref={headerRef}
-              style={{ scale: labelScale, y: labelY, transformOrigin: "left top" }}
-              className="text-orange-400 font-['Playfair Display',serif] leading-[0.85] select-none text-[clamp(2.2rem,7.6vw,6.4rem)] font-extrabold"
+              style={{ scale: labelScale, y: labelY, transformOrigin: "center top" }}
+              className="text-orange-400 font-['Playfair Display',serif] leading-[0.85] select-none font-extrabold text-center"
+              // larger, more prominent sizes for the new component
             >
-              What
-              <br />
-              We Do
+              <span className="whitespace-nowrap text-[clamp(2.6rem,9vw,7.6rem)]">What We Do</span>
             </motion.p>
           </motion.div>
 
-          <div className="lg:col-span-7 lg:pt-8">
-            <h2 className="font-['Playfair Display',serif] tracking-tight text-black leading-[1.05] text-[clamp(2.2rem,3.8vw,3.6rem)]">
-              Content Beyond Borders
+          <div className="lg:col-span-12 lg:pt-6">
+            <h2 className="font-['Playfair Display',serif] tracking-normal text-black leading-[1.05] flex items-baseline justify-center gap-2 whitespace-nowrap">
+              <span className="text-[clamp(1.6rem,5.2vw,2.8rem)] md:text-[clamp(2.2rem,3.8vw,3.6rem)] font-medium tracking-normal">Content</span>
+              <span className="text-[clamp(0.98rem,3.2vw,1.3rem)] md:text-[clamp(1.45rem,2.8vw,1.85rem)] text-black font-semibold tracking-normal">Beyond</span>
+              <span className="text-[clamp(1.6rem,5.2vw,2.8rem)] md:text-[clamp(2.2rem,3.8vw,3.6rem)] font-medium tracking-normal">Borders</span>
             </h2>
 
-            <p className="mt-6 text-black/65 leading-relaxed text-[1.05rem] sm:text-lg max-w-[60ch]">
-              Broadcast-ready content delivered through international networks to
-              audiences worldwide.
+            <p className="mt-6 text-black/65 leading-relaxed text-[1.05rem] sm:text-lg max-w-[60ch] mx-auto">
+              Broadcast-ready content delivered through international networks to audiences worldwide.
             </p>
 
-            <div className="mt-9 h-px w-14 bg-black/15" />
+            <div className="mt-9 h-px w-14 bg-black/15 mx-auto" />
           </div>
         </div>
 

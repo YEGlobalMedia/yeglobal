@@ -229,9 +229,9 @@ const MenuTrigger = ({ siteReady = true }) => {
               src={YELogo}
               alt="YE Global Logo"
               className="
-                h-[clamp(44px,6vw,72px)]
+                h-[clamp(56px,8vw,96px)]
                 w-auto
-                max-w-[140px] sm:max-w-[170px]
+                max-w-[180px] sm:max-w-[220px]
                 object-contain
               "
             />
