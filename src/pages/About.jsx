@@ -19,8 +19,8 @@ export default function About() {
       <main className="flex-1 w-full max-w-5xl mx-auto px-6 py-10 md:py-12">
         {/* HERO */}
         <section className="text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <h1 className="font-['Playfair Display',serif] text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.05] tracking-tight text-[#ff6a00]">
-            About YE Global
+          <h1 className="font-['Playfair Display',serif] text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.05] tracking-tight text-[#ff6a00] mt-6 md:mt-0">
+            About <span className="whitespace-nowrap">YE Global</span>
           </h1>
           <div className="mt-6 w-full h-px bg-[#ff6a00]/30 mx-auto max-w-[140px]" />
         </section>
@@ -71,9 +71,9 @@ export default function About() {
                 <BulletList
                   tight
                   items={[
+                    "Stories with cross-cultural relevance and global scalability",
                     "International drama and scripted content",
                     "High-impact docuseries",
-                    "Stories with cross-cultural relevance and global scalability",
                   ]}
                 />
 
@@ -213,6 +213,8 @@ export default function About() {
 }
 
 /* ---------- Reusable section components (tighter rhythm) ---------- */
+
+
 
 function Section({ title, body }) {
   return (

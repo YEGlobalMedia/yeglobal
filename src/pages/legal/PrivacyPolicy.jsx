@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
       <main className="flex-1 w-full max-w-5xl mx-auto px-6 py-10 md:py-12">
         {/* HERO */}
         <section className="text-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
-          <h1 className="font-['Playfair Display',serif] text-5xl md:text-7xl font-medium leading-[1.05] tracking-tight text-[#ff6a00]">
+          <h1 className="font-['Playfair Display',serif] text-5xl md:text-7xl font-medium leading-[1.05] tracking-tight text-[#ff6a00] mt-6 md:mt-0">
             Privacy Policy
           </h1>
           <div className="mt-6 w-full h-px bg-[#ff6a00]/30 mx-auto max-w-[140px]" />
@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
             <p>
               This policy covers Personal Information that we collect directly
               from you. It&apos;s when you get in touch with us, use our website at
-              www.equalitymedia.co (Website), or sign up to our newsletter.
+              www.yeglobalmediacorp.com.au (Website), or sign up to our newsletter.
               Sometimes we might need to make changes or add stuff to this policy
               and we&apos;ll let you know where possible.
             </p>
@@ -182,7 +182,7 @@ export default function PrivacyPolicy() {
             <p>
               You have the right to access and correct your Personal Information
               under the Privacy Act. If you want to access or correct your info,
-              just reach out to our team at hello@equalitymedia.co. They will help
+              just reach out to our team at hello@yeglobalmediacorp.com.au They will help
               you out.
             </p>
             <p>
