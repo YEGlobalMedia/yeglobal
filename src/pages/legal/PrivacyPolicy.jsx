@@ -56,7 +56,15 @@ export default function PrivacyPolicy() {
             <p>
               This policy covers Personal Information that we collect directly
               from you. It&apos;s when you get in touch with us, use our website at
-              www.yeglobalmediacorp.com.au (Website), or sign up to our newsletter.
+              <a
+                href="https://www.yeglobalmediacorp.com.au"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ff6a00] hover:underline"
+              >
+                www.yeglobalmediacorp.com.au
+              </a>
+              (Website), or sign up to our newsletter.
               Sometimes we might need to make changes or add stuff to this policy
               and we&apos;ll let you know where possible.
             </p>
