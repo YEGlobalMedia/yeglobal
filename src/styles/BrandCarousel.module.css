@@ -1,0 +1,55 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: clamp(160px, 24vh, 240px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  will-change: transform;
+
+  /* ✅ more horizontal breathing room */
+  gap: clamp(120px, 10vw, 220px);
+  padding-left: clamp(120px, 10vw, 220px);
+}
+
+.item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* ✅ taller container so logos are NOT squashed */
+  width: clamp(160px, 16vw, 240px);
+  height: clamp(80px, 10vw, 120px);
+
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.item:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+
+  /* ✅ NO CROPPING */
+  object-fit: contain;
+
+  /* optional polish */
+  filter: saturate(1);
+}

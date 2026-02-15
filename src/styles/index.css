@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* =========================
+   Global base
+========================= */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ── Bump base font-size so ALL rem-based sizes scale up proportionally ── */
+html {
+  font-size: 107%;  /* ~17.1px vs default 16px — keeps ratio intact */
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 110%; /* ~17.6px on tablet+ */
+  }
+}
+@media (min-width: 1280px) {
+  html {
+    font-size: 112%; /* ~18px on large desktop */
+  }
+}
+
+/* Thin, always-visible scrollbar — never appears/disappears = no layout twitch.
+   Styled to blend with the site's warm palette.
+   ONLY html gets a visible scrollbar. */
+html {
+  scrollbar-gutter: stable;       /* always reserve space even when overflow:hidden */
+  scrollbar-width: thin;          /* Firefox: thin scrollbar */
+  scrollbar-color: #e0c9b5 transparent; /* Firefox: thumb / track */
+}
+html::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #e0c9b5;
+  border-radius: 3px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #d4a982;
+}
+
+/* Kill scrollbar on EVERYTHING except html — prevents double scrollbar.
+   body, #root, Locomotive container, and any nested element. */
+body,
+body *  {
+  scrollbar-width: none;                /* Firefox */
+}
+body::-webkit-scrollbar,
+body *::-webkit-scrollbar {
+  display: none;                        /* Chrome / Safari / Edge */
+}
+
+/* Lock class — toggled by utils/scrollLock.js
+   scrollbar-gutter: stable keeps the gutter even with overflow: hidden */
+html.scroll-locked {
+  overflow: hidden !important;
+}
+
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #fff4eb;
+  color: #111;
+
+  /* ✅ Body font */
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+}
+
+/* ✅ Headings / Hero font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Editorial typography helper */
+.editorial-text {
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* =========================
+   Marquee strip
+========================= */
+.moveX {
+  animation: moveAnimation 25s linear infinite;
+}
+
+.moveLink {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.link:hover .moveLink {
+  opacity: 1;
+}
+
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* =========================
+   Map marker pulse animations
+========================= */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+    opacity: 0.8;
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
